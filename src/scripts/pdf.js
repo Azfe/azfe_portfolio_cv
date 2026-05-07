@@ -4,7 +4,7 @@ const SVG_DOWNLOAD = `<svg xmlns="http://www.w3.org/2000/svg" width="14" height=
 
 export function downloadPDF() {
   const btn = document.getElementById('btn-download');
-  const element = document.getElementById('cv-paper');
+  const element = document.querySelector('.cv-layout');
 
   if (!element) return;
 
@@ -14,21 +14,19 @@ export function downloadPDF() {
   }
 
   const opt = {
-    margin: 0,
+    margin: [0, 0],
     filename: CV_FILENAME,
     image: { type: 'jpeg', quality: 0.98 },
     html2canvas: {
       scale: 2,
       useCORS: true,
       letterRendering: true,
-      windowWidth: 860,
       backgroundColor: '#ffffff',
     },
     jsPDF: {
-      unit: 'px',
+      unit: 'mm',
       format: 'a4',
       orientation: 'portrait',
-      hotfixes: ['px_scaling'],
     },
     pagebreak: { mode: ['avoid-all', 'css', 'legacy'] },
   };
