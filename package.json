@@ -5,7 +5,11 @@
   "scripts": {
     "dev": "sass src/scss/main.scss assets/css/styles.css --watch",
     "build": "sass src/scss/main.scss assets/css/styles.css --style=compressed --no-source-map",
-    "preview": "npx serve . -p 3001"
+    "start": "serve . -l $PORT",
+    "preview": "serve . -p 3001"
+  },
+  "dependencies": {
+    "serve": "^14.2.4"
   },
   "devDependencies": {
     "sass": "^1.80.0"
