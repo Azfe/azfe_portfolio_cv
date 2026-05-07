@@ -1,0 +1,50 @@
+.cv-bg {
+  min-height: calc(100vh - 52px);
+  background: var(--color-cv-bg);
+  padding: 40px 24px 60px;
+}
+
+.cv-paper {
+  max-width: 860px;
+  margin: 0 auto;
+  background: var(--color-cv-paper);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-card-hover);
+  overflow: hidden;
+}
+
+.cv-layout {
+  display: grid;
+  grid-template-columns: 210px 1fr;
+  min-height: 600px;
+}
+
+.scroll-to-top-btn {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--color-blue);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(30, 107, 247, 0.3);
+  z-index: 200;
+  transition: background var(--transition), transform var(--transition);
+
+  &:hover {
+    background: var(--color-blue-2);
+    transform: translateY(-2px);
+  }
+}
+
+@media (max-width: 640px) {
+  .cv-layout {
+    grid-template-columns: 1fr;
+  }
+}

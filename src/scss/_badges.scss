@@ -1,0 +1,50 @@
+// Skill chips (SkillList.astro)
+.chip-c1 { background: var(--color-chip-c1-bg); color: var(--color-chip-c1-text); }
+.chip-c2 { background: var(--color-chip-c2-bg); color: var(--color-chip-c2-text); }
+.chip-c5 { background: var(--color-chip-c5-bg); color: var(--color-chip-c5-text); }
+.chip-c6 { background: var(--color-chip-c6-bg); color: var(--color-chip-c6-text); }
+.chip-neutral {
+  background: var(--color-soft);
+  color: var(--color-ink-2);
+  border: 1px solid var(--color-line);
+}
+
+// Tech badges (Badge.astro) — padding sm (10px/3px) para uso en cv
+.badge--c1 { background: #e9efff; color: #2859d8; border-radius: var(--radius-pill); padding: 3px 8px; font-size: 10px; font-weight: 600; letter-spacing: 0.01em; }
+.badge--c2 { background: #e0f6ef; color: #0a6c39; border-radius: var(--radius-pill); padding: 3px 8px; font-size: 10px; font-weight: 600; letter-spacing: 0.01em; }
+.badge--c3 { background: #fdebee; color: #a8243c; border-radius: var(--radius-pill); padding: 3px 8px; font-size: 10px; font-weight: 600; letter-spacing: 0.01em; }
+.badge--c4 { background: #fff4dd; color: #7a5200; border-radius: var(--radius-pill); padding: 3px 8px; font-size: 10px; font-weight: 600; letter-spacing: 0.01em; }
+.badge--c5 { background: #f1eaff; color: #6a3acf; border-radius: var(--radius-pill); padding: 3px 8px; font-size: 10px; font-weight: 600; letter-spacing: 0.01em; }
+.badge--c6 { background: #e4f3fb; color: #1d6f9c; border-radius: var(--radius-pill); padding: 3px 8px; font-size: 10px; font-weight: 600; letter-spacing: 0.01em; }
+
+// Pills de experiencia
+.xp-dates-pill {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: var(--radius-pill);
+  background: var(--color-blue-soft);
+  color: var(--color-blue);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.xp-location-pill {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: var(--radius-pill);
+  background: #fdebee;
+  color: #c23a52;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.training-duration-pill {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: var(--radius-pill);
+  background: var(--color-soft);
+  color: var(--color-ink-2);
+  font-size: 11px;
+  font-weight: 500;
+  border: 1px solid var(--color-line);
+}
