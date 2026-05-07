@@ -1,0 +1,25 @@
+@media print {
+  .cv-bar,
+  #btn-download,
+  #scroll-to-top-cv {
+    display: none !important;
+  }
+
+  .cv-bg {
+    padding: 0;
+    background: transparent;
+    min-height: auto;
+  }
+
+  .cv-paper {
+    max-width: none;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .cv-sidebar {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    background-color: #f5f8fd !important;
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "portfolio-cv",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "sass src/scss/main.scss assets/css/styles.css --watch",
+    "build": "sass src/scss/main.scss assets/css/styles.css --style=compressed --no-source-map",
+    "preview": "npx serve . -p 3001"
+  },
+  "devDependencies": {
+    "sass": "^1.80.0"
+  }
+}

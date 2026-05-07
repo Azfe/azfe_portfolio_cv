@@ -1,0 +1,46 @@
+:root {
+  // Colores base
+  --color-bg: #ffffff;
+  --color-ink: #1a2747;
+  --color-ink-2: #4a5a7a;
+  --color-ink-3: #4c5872;
+  --cv-ink-muted: #8592b0;
+  --color-line: #e8ecf4;
+  --color-card: #ffffff;
+  --color-soft: #f5f8fd;
+  --color-blue: #1e6bf7;
+  --color-blue-2: #3c83ff;
+  --color-blue-soft: #eaf1ff;
+  --color-dot: #d9e0ee;
+
+  // Colores CV
+  --color-cv-bg: #f4f6fa;
+  --color-cv-paper: #ffffff;
+
+  // Skill chip colors
+  --color-chip-c1-bg: #e9efff;
+  --color-chip-c1-text: #2859d8;
+  --color-chip-c2-bg: #e0f6ef;
+  --color-chip-c2-text: #0f8a4a;
+  --color-chip-c3-bg: #fdebee;
+  --color-chip-c3-text: #c23a52;
+  --color-chip-c4-bg: #fff4dd;
+  --color-chip-c4-text: #a66b15;
+  --color-chip-c5-bg: #f1eaff;
+  --color-chip-c5-text: #6a3acf;
+  --color-chip-c6-bg: #e4f3fb;
+  --color-chip-c6-text: #1d6f9c;
+
+  // Radios
+  --radius-pill: 999px;
+  --radius-lg: 24px;
+  --radius-md: 16px;
+  --radius-sm: 8px;
+
+  // Sombras
+  --shadow-card: 0 2px 16px rgba(26, 39, 71, 0.07);
+  --shadow-card-hover: 0 6px 28px rgba(26, 39, 71, 0.12);
+
+  // Transiciones
+  --transition: 200ms ease;
+}
