@@ -11,10 +11,11 @@ RUN npm run build
 
 # Stage 2: Serve — copy compiled assets to Nginx
 FROM nginx:alpine
-COPY . /usr/share/nginx/html
 
 COPY --from=builder /app/index.html /usr/share/nginx/html/index.html
 COPY --from=builder /app/assets /usr/share/nginx/html/assets
 COPY --from=builder /app/src/scripts /usr/share/nginx/html/src/scripts
 
-EXPOSE 80
+COPY nginx.conf.template /etc/nginx/templates/default.conf.template
+
+RUN rm /etc/nginx/conf.d/default.conf
