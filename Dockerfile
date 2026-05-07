@@ -16,6 +16,6 @@ COPY --from=builder /app/index.html /usr/share/nginx/html/index.html
 COPY --from=builder /app/assets /usr/share/nginx/html/assets
 COPY --from=builder /app/src/scripts /usr/share/nginx/html/src/scripts
 
-COPY nginx.conf.template /etc/nginx/templates/default.conf.template
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-RUN rm /etc/nginx/conf.d/default.conf
+CMD ["/bin/sh", "-c", "sed -i \"s/__PORT__/$PORT/g\" /etc/nginx/conf.d/default.conf && exec nginx -g 'daemon off;'"]
